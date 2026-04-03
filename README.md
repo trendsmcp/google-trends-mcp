@@ -51,13 +51,22 @@ See the main repo: [https://github.com/trendsmcp/trends-mcp](https://github.com/
 ```
 
 **Claude Desktop** &nbsp; (`claude_desktop_config.json`)
+User → Settings → Developer → Edit Config — add inside mcpServers
 ```json
 {
   "mcpServers": {
     "trends-mcp": {
-      "url": "https://api.trendsmcp.ai/mcp",
-      "transport": "http",
-      "headers": { "Authorization": "Bearer YOUR_API_KEY" }
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://api.trendsmcp.ai/mcp",
+        "--header",
+        "Authorization:${AUTH_HEADER}"
+      ],
+      "env": {
+        "AUTH_HEADER": "Bearer YOUR_API_KEY"
+      }
     }
   }
 }
