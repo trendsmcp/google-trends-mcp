@@ -5,7 +5,7 @@
 [![Works with Claude](https://img.shields.io/badge/Claude-supported-orange?style=flat-square)](https://trendsmcp.ai/mcp-server-for-claude)
 [![Works with Cursor](https://img.shields.io/badge/Cursor-supported-purple?style=flat-square)](https://trendsmcp.ai/mcp-server-for-cursor)
 
-> **Google Trends data for AI assistants**
+> **Google Trends data for AI assistants and agents**
 > Ask your AI what is trending on Google right now. Get breakout keywords, rising topics, and 5 years of normalized search interest data - without writing a single line of scraping code.
 
 **Full docs and live demo:** [https://trendsmcp.ai/google-trends](https://trendsmcp.ai/google-trends)
